@@ -102,7 +102,7 @@
 									</tr>
 									<tr>
 										<td>一氧化碳</td>
-										<td class="right-align" id="CO">0 ppb</td>
+										<td class="right-align" id="CO">0 ppm</td>
 									</tr>
 									<tr>
 										<td>一氧化氮</td>
@@ -122,7 +122,7 @@
 									</tr>
 									<tr>
 										<td>風速</td>
-										<td class="right-align" id="WindSpeed">總之..很快</td>
+										<td class="right-align" id="WindSpeed">總之..很快 m/s</td>
 									</tr>
 								</tbody>
 							</table>
@@ -273,12 +273,12 @@
 				$('#PM10').append(html);
 
 				$('#O3').text(nothing(air_details.O3) + " ppb");
-				$('#CO').text(nothing(air_details.CO) + " ppb");
+				$('#CO').text(nothing(air_details.CO) + " ppm");
 				$('#NO').text(nothing(air_details.NO) + " ppb");
 				$('#NO2').text(nothing(air_details.NO2) + " ppb");
 				$('#NOx').text(nothing(air_details.NOx) + " ppb");
 				$('#SO2').text(nothing(air_details.SO2) + " ppb");
-				$('#WindSpeed').text(nothing(nothing(air_details.WindSpeed)));
+				$('#WindSpeed').text(nothing(nothing(air_details.WindSpeed)) + " m/s");
 				$('#PublishTime').text("最後更新時間 " + air_details.PublishTime);
 			}
 
