@@ -1,6 +1,6 @@
 window.air_county = {};
 $.ajax({
-	url: 'http://rureta.me/air/json/all.json',
+	url: 'air.json',
 	type: 'GET',
 	dataType: 'json',
 })
